@@ -4,3 +4,89 @@
     box-sizing: border-box;
     font-size: 100%;
 }
+.container {
+    max-width: 1500px;
+    width: 100%;
+    /* margin: 0 auto; */
+    padding-top: 27px;
+}
+header {
+    background-color: #0020F4;
+    height: 387.56px;
+    /* margin: 0 auto; */
+    /* justify-content: space-between;
+    align-items: center; */
+}
+.upper {
+    display: flex;
+    padding-top: 37px;
+}
+.skylogo, .navdiv {
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-ul {
+    display: flex;
+    justify-content: space-around;
+}
+.navbar-li {
+    list-style-type: none;
+    text-decoration: none;
+}
+.navbar-li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-family: 'Regular';
+}
+.navbar-li-bold a {
+    background-color: white;
+    color: black;
+    border-radius: 28px;
+    font-family: 'Bold';
+    text-decoration: none;
+    list-style-type: none;
+}
+.content {
+    /* max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; */
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "mainimg mainimg mainimg mainimg mainimg"
+    "headline headline headline headline headline"
+    "pictures pictures pictures pictures pictures"
+    "textcontent textcontent textcontent textcontent textcontent"
+    "click click click click click click";
+}
+.mainimg {
+    grid-area: mainimg;
+    max-width: 1200px;
+    width: 100%;
+}
+.headline {
+    grid-area: headline;
+    font-family: 'bold';
+}
+.pictures {
+    grid-area: pictures;
+    display: flex;
+    justify-content: center;
+}
+.textcontent-box-1, .textcontent-box-2, .textcontent-box-3 {
+    padding-top: 60px;
+    width: 951px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    font-size: 16px;
+    color: #171717;
+    font-family: 'Regular';
+    grid-area: textcontent;
+}
+button {
+    grid-area: click;
+}
