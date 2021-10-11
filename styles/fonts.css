@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Regular';
-    scr: url('./styles/HelveticaNeue-Regular.ttf')
+    scr: url('styles/HelveticaNeue-Regular.ttf')
 }
 @font-face {
     font-family: 'Bold'.;
-    src: url('./styles/HelveticaNeue Bold.ttf');
+    src: url('styles/HelveticaNeue Bold.ttf');
 }

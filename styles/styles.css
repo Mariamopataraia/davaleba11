@@ -75,11 +75,13 @@ h1 {
     /* display: flex; */ */
     max-width: 400px;
     display: flex;
+    width: 100%;
+    margin: auto 60px auto 60px;
 }
 .textcontent {
     grid-area: ptext;
     margin-top: 30px;
-    max-width: 951;
+    max-width: 951px;
     width: 100%;
     margin: 0 auto;
 }
@@ -90,8 +92,43 @@ button {
     color: #FFFFFF;
     font-family: 'Bold';
     padding: 18px 77px;
-    margin-top: 60px;
+    margin top: 60px;
+    justify-content: center;
+    /* align-self: center; */
+    align-items: center;
+    display: flex;
 }
 footer {
     background: #0020F4;
+}
+h3 {
+    color: #FFFFFF;
+    height: 38px;
+    font-family: 'Bold';
+    padding-top: 275px;
+    padding-left: 100px;
+}
+.Lorem {
+    font-size: 16px;
+    width: 463px;
+    display: inline-block;
+    /* padding-bottom: 58px; */
+    font-family: 'Regular';
+    color: #FFFFFF;
+    padding-top: 350px;
+    padding-left: 100px;
+   
+}
+iframe {
+    justify-content: end;
+    padding-right: 250px;
+    width: 463px;
+    height: 197px;
+    display: flex;
+}
+.footerdiv {
+    display: flex;
+}
+.regform {
+    display: flex;
 }
