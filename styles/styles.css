@@ -48,45 +48,50 @@ header {
     list-style-type: none;
 }
 .content {
-    /* max-width: 1200px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto; */
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto;
+    /* grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto; */
     grid-template-areas: 
-    "mainimg mainimg mainimg mainimg mainimg"
-    "headline headline headline headline headline"
-    "pictures pictures pictures pictures pictures"
-    "textcontent textcontent textcontent textcontent textcontent"
-    "click click click click click click";
+    "main main main main main"
+    "bigtext bigtext bigtext bigtext bigtext"
+    "5pic 5pic 5pic 5pic 5pic"
+    "ptext ptext ptext ptext ptext"
+    "add add add add add";
 }
 .mainimg {
-    grid-area: mainimg;
+    grid-area: main;
     max-width: 1200px;
     width: 100%;
+    transform: translateY(-150px);
 }
-.headline {
-    grid-area: headline;
-    font-family: 'bold';
+h1 {
+    grid-area: bigtext;
+    padding-right: 824px;
+    margin-top: 15px;
 }
 .pictures {
-    grid-area: pictures;
+    grid-area: 5pic;
+    /* max-width: 600px;
+    /* display: flex; */ */
+    max-width: 400px;
     display: flex;
-    justify-content: center;
 }
-.textcontent-box-1, .textcontent-box-2, .textcontent-box-3 {
-    padding-top: 60px;
-    width: 951px;
-    /* margin-left: auto;
-    margin-right: auto; */
-    font-size: 16px;
-    color: #171717;
-    font-family: 'Regular';
-    grid-area: textcontent;
+.textcontent {
+    grid-area: ptext;
+    margin-top: 30px;
+    max-width: 951;
+    width: 100%;
+    margin: 0 auto;
 }
 button {
-    grid-area: click;
+    grid-area: add;
+    border-radius: 28px;
+    background: #0A22F4;
+    color: #FFFFFF;
+    font-family: 'Bold';
+    padding: 18px 77px;
+    margin-top: 60px;
+}
+footer {
+    background: #0020F4;
 }
